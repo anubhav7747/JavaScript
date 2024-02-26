@@ -80,7 +80,7 @@ const users = [
 
 // console.log(users[1].email);
 
-console.log(tinderUser);
+// console.log(tinderUser);
 // console.log(Object.keys(tinderUser));
 // console.log(Object.values(tinderUser));
 // console.log(typeof Object.keys(tinderUser));
@@ -88,5 +88,36 @@ console.log(tinderUser);
 // console.log(Object.entries(tinderUser));
 
 // to check property
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));   // true
-console.log(tinderUser.hasOwnProperty('isLogged'));   // true
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));   // true
+// console.log(tinderUser.hasOwnProperty('isLogged'));   // true
+
+
+const course = {
+    courseName: "javascript",
+    price: "999",
+    courseInstructor: "anubhav"
+}
+
+// console.log(course.courseInstructor);
+
+
+// better way to write or doing destructuring of objects
+
+// const {courseInstructor} = course;
+// console.log(courseInstructor);  // anubhav
+const {courseInstructor: instructor} = course;
+console.log(instructor); // anubhav
+
+
+// json is also an object
+// {
+//     "name": 'Anubhav',
+//     "courseName": 'javascript',
+//     "price": "free",
+// }
+
+// [
+//     {},
+//     {},
+//     {},
+// ]
