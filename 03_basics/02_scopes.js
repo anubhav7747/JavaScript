@@ -13,4 +13,46 @@ if (true) {
 
 // console.log(a);
 // console.log(b);
-console.log(c);
+// console.log(c);
+
+
+
+function one(){
+    const username = "anubhav";
+
+    function two(){
+        const website = "youtube.com";
+        console.log(username);
+    }
+
+    // console.log(website);
+
+    // two();
+}
+
+// one();
+
+if (true) {
+    const username = "anubhav";
+    if (username === "anubhav") {
+        const website = " youtube.com";
+        // console.log(username + website);
+    }
+    // console.log(website);
+}
+// console.log(username);
+
+
+
+// ++++++++++++++++++++++++++++ interesting ++++++++++++++++++++++++++++
+
+addOne(5);
+function addOne(num){
+    return num + 1;
+}
+
+
+addTwo(5);  // Cannot access 'addTwo' before initialization
+const addTwo = function(num){
+    return num + 2;
+}
