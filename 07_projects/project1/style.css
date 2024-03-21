@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  margin: 25px;
+  width: 95%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.button {
+  border: 5px solid;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  display: inline-block;
+}
+
+#grey {
+  background-color: gray;
+}
+
+#white {
+  background-color: white;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
