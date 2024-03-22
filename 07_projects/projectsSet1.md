@@ -105,3 +105,16 @@ formEl.addEventListener("submit", (e) => {
   }
 });
 ```
+
+<br>
+
+## project 3
+
+```javascript
+const timeEl = document.querySelector("#time");
+
+setInterval(() => {
+  let date = new Date();
+  timeEl.innerHTML = date.toLocaleTimeString();
+}, 1000);
+```
