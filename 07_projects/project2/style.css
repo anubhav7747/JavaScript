@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: gray;
+    font-family: monospace;
+}
+
+h1 {
+    padding: 25px;
+    text-align: center;
+    font-size: 40px;
+}
+
+div {
+    font-size: 20px;
+    margin: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+#height, #weight {
+    width: 250px;
+    height: 35px;
+    padding-left: 7px;
+    font-size: large;
+    border: transparent;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
+}
+
+button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background: orange;
+    color: brown;
+    font-size: 20px;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: rgb(141, 93, 5);
+    color: whitesmoke;
+}
+
+h2, p {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+#result {
+    color: blueviolet;
+    font-family: monospace;
+    font-size: 25px;
+}

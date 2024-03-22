@@ -9,8 +9,6 @@
 ## project 1
 
 ```javascript
-console.log("anubhav");
-
 // My Method
 // const greyEl = document.getElementById("grey");
 // const whiteEl = document.getElementById("white");
@@ -32,6 +30,7 @@ console.log("anubhav");
 // yellowEl.addEventListener("click", () => {
 //   document.body.style.backgroundColor = "yellow";
 // });
+
 
 // Hitesh Sir Method using if statement. Later I updated it in to switchstatement.
 const buttons = document.querySelectorAll(".button");
@@ -64,5 +63,45 @@ buttons.forEach((button) => {
         break;
     }
   });
+});
+```
+
+<br>
+
+## project 2
+
+```javascript
+const formEl = document.querySelector("form");
+
+// formEl.addEventListener("submit", (e) => {
+//   e.preventDefault();
+
+//   const height = parseInt(document.querySelector("#height").value);
+//   // console.log(height.value);
+// //   console.log(height);
+//   const weight = parseInt(document.querySelector("#weight").value);
+//   // console.log(weight.value);
+// //   console.log(weight);
+//   const result = document.querySelector("#result");
+//   result.innerHTML = weight / (height * height);
+// });
+
+
+// hitesh sir method
+formEl.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const height = parseInt(document.querySelector("#height").value);
+  const weight = parseInt(document.querySelector("#weight").value);
+  const result = document.querySelector("#result");
+
+  if (height === "" || height < 0 || isNaN(height)) {
+    result.innerHTML = `Please give a valid height ${height}`;
+  } else if (weight === "" || weight < 0 || isNaN(weight)) {
+    result.innerHTML = `Please give a valid weight ${weight}`;
+  } else {
+    const bmi = (weight / ((height * height) / 10000)).toFixed(2);
+    result.innerHTML = `<span>${bmi}</span>`;
+  }
 });
 ```
